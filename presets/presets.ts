@@ -41,7 +41,7 @@ export default (env: ConfigEnv) => {
       extensions: ['vue', 'md'],
       include: [/\.vue$/, /\.vue\?vue/, /\.md$/],
       // imports 指定组件所在位置，默认为 src/components; 有需要也可以加上 view 目录
-      dirs: ['src/components/'],
+      dirs: ['src/components/','src/views'],
       resolvers: [ElementPlusResolver(), IconsResolver(), VueUseComponentsResolver()],
     }),
     Icons({

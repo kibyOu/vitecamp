@@ -7,13 +7,21 @@ export {}
 
 declare module '@vue/runtime-core' {
   export interface GlobalComponents {
+    401: typeof import('./views/exception/401.vue')['default']
+    404: typeof import('./views/exception/404.vue')['default']
     ElButton: typeof import('element-plus/es')['ElButton']
     ElCol: typeof import('element-plus/es')['ElCol']
     ElConfigProvider: typeof import('element-plus/es')['ElConfigProvider']
+    ElForm: typeof import('element-plus/es')['ElForm']
+    ElFormItem: typeof import('element-plus/es')['ElFormItem']
+    ElInput: typeof import('element-plus/es')['ElInput']
     ElResult: typeof import('element-plus/es')['ElResult']
     ElRow: typeof import('element-plus/es')['ElRow']
+    ElTable: typeof import('element-plus/es')['ElTable']
+    ElTableColumn: typeof import('element-plus/es')['ElTableColumn']
     ElTooltip: typeof import('element-plus/es')['ElTooltip']
     EnProcess: typeof import('./components/EnProcess.md')['default']
+    Home: typeof import('./views/home/index.vue')['default']
     IAkarIconsGithubFill: typeof import('~icons/akar-icons/github-fill')['default']
     ILaLanguage: typeof import('~icons/la/language')['default']
     IMdiContentDuplicate: typeof import('~icons/mdi/content-duplicate')['default']
@@ -21,9 +29,13 @@ declare module '@vue/runtime-core' {
     IPhCloudMoonBold: typeof import('~icons/ph/cloud-moon-bold')['default']
     IPhSunHorizonBold: typeof import('~icons/ph/sun-horizon-bold')['default']
     IRiArticleLine: typeof import('~icons/ri/article-line')['default']
+    MarkdownPage: typeof import('./views/example/MarkdownPage.vue')['default']
     RouterLink: typeof import('vue-router')['RouterLink']
     RouterView: typeof import('vue-router')['RouterView']
     TheFooter: typeof import('./components/TheFooter.vue')['default']
+    TodoApp: typeof import('./views/todolist/TodoApp.vue')['default']
+    TodoForm: typeof import('./views/todolist/components/TodoForm.vue')['default']
+    TodoList: typeof import('./views/todolist/components/TodoList.vue')['default']
     ZhProcess: typeof import('./components/ZhProcess.md')['default']
   }
 }
